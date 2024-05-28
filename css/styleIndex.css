@@ -6,6 +6,17 @@
 
 .banner {
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid #fd7023;
+    border-bottom: 10px solid white;
+    margin-top: 1%;
+    padding-top: 1%;
+}
+
+.imgg{
+      width: 20vw;
 }
 
 /* 

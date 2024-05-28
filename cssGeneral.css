@@ -1,17 +1,43 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 Body {
-    font-family: "lato", sans-serif;
+  font-family: "lato", sans-serif;
 }
 
-nav {
-    background-color: rgb(248, 163, 6);
-    background-size: auto;
-    border: 10px;
-    padding: 10px;
+
+nav .list {
+display: flex;
+float:center;
+margin: 0;
+padding-top: 75px;
+padding-bottom: 2px;
+justify-content:space-between;
+align-items:center
+}
+
+nav .list li {
+list-style: none;
+}
+
+nav .list a{
+display: block;
+text-transform:uppercase;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 5px;
+font-size: 13px;
+color: black;
+text-decoration: none;
+}
+
+nav .list a:hover{
+background-color: #E8ACE4;
+border-bottom: 2px solid black
 }
 
 .line {
@@ -24,11 +50,10 @@ nav {
   }
 
   .socaloFooter{
-    font-family: "lato";
-    color: white;
+    font-family: "lato" black;
     padding: 1%;
-    background-color: rgb(0, 0, 0);
-  width: 100%;
+    background-color:white;
+    width: 100%;
 
 }
 
