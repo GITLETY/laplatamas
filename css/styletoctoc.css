@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 { align-items: flex-start;
+margin: 40px 0 0 40px;
+}
+
+.box {
+    display: flex;
+    width 100vw;
+    height: 700px;
+    background-color: rgb(245, 198, 128);
+    border: solid black;
+    margin-bottom: 50px;
+    
+}
+
+.item {
+    flex-direction: row; 
+    gap: 10px;
+    justify-content: center; 
+    width: auto;
+    height: auto;
+    border: solid black;
+    margin: 30px;
+}
