@@ -5,20 +5,19 @@
     display: flex;
 }
 img{
-width: 10rem;
+width: 15vw;
+height: 25vh;
 }
 
 .conteiner{
 border: 2px solid red;
 
-padding: 5rem;
-
 }
         .conteinerdiv{
             
-            padding: 9rem; /*tamaño de la caja*/
-            width: 180px; /*tamaño del texto*/
-            margin: 1rem 1rem 1rem 4rem;
+            padding: 9rem; 
+            width: 180px;
+            margin: 0.5rem 0.1rem 5rem 6rem;
             display: inline-block;
             background-color: antiquewhite;
         }
