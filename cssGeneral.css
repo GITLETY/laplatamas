@@ -14,8 +14,8 @@ nav .list {
 display: flex;
 float:center;
 margin: 0;
-padding-top: 75px;
-padding-bottom: 2px;
+padding-top: 70px;
+padding-bottom: 1px;
 justify-content:space-between;
 align-items:center
 }
@@ -47,7 +47,7 @@ border-bottom: 2px solid black
     flex-wrap: wrap;
     align-items:start;
     justify-content: space-evenly;
-  }
+   }
 
   .socaloFooter{
     font-family: "lato" black;
