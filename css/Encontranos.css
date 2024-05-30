@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .list {
+    background-color: rgb(255, 122, 33);
+  flex-direction: column;
+  justify-content: center;
+  }
+  a {
+      margin: 0;
+  }
+  
