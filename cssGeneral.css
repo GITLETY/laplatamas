@@ -9,9 +9,9 @@ Body {
   font-family: "lato", sans-serif;
 }
 
-.guarda{
+#guarda{
   display: flex;
-  font-family: "lato";
+  font-family:"lato";
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -24,19 +24,13 @@ Body {
 
 
 .linea {
-  margin: 0;
-  padding-top: 0;
   width: 100vw;
   border-bottom:solid 3px #fd7023 
 }
 
 nav .list {
 display: flex;
-float:center;
-margin:0;
-padding-top: 1px;
-padding-bottom: 10px;
-justify-content:space-between;
+justify-content: center;
 align-items:center
 }
 
@@ -45,6 +39,7 @@ list-style: none;
 }
 
 nav .list a {
+display: inline-block;
 text-transform:uppercase;
 text-align: center;
 padding-top: 10px;
@@ -58,7 +53,6 @@ nav .list a:hover{
 background-color: #a788aba6;
 border-bottom: 1px solid black
 }
-
 
 .line {
     overflow: hidden;
@@ -86,35 +80,24 @@ border-bottom: 1px solid black
     a {
     width: 150px;
     justify-content: center;
-    
-          
     }
-    .copyr {
-      font-size: 10px;
-      background-color: #fd9753;
-      color: rgb(17, 17, 17);
-      justify-content: end;
-      padding-bottom: 10px;
-    }
-    .mediaitem {
+  
+  span {
+    color: black;
+  }
+      .mediaitem {
         width: 40px;
         margin: 25px;
     }
     #volver {
       margin-top: 25px;
     }
-  .socaloFooter {
-    font-family: "lato" black; 
-        padding: 1%;
-    background-color:white;
-    width: 100%;
-
-}
-
+ 
+       
   @media screen and (max-width: 480px) {
            
     .list {
-      background-color: rgb(255, 122, 33);
+    background-color: rgb(255, 122, 33);
     flex-direction: column; 
     text-align: center;
       }

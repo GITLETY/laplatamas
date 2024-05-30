@@ -6,7 +6,7 @@
 .banner {
     width: 100vw;
     display: flex;
-    align-items: center;
+    justify-content: center;
     border-bottom: 2px solid black;
     margin-top: 1%;
     padding-top: 3%;
@@ -49,11 +49,7 @@ color: #fd7023;
     padding-left: 3%;
 
 }
-span{  
-    font-size: 13px;
-    color: white;
-    padding-left: 3%;
-}
+
 
 p {
     font-size: 10;
