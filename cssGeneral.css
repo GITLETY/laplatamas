@@ -22,19 +22,26 @@ Body {
   width: 100vw;
 }
 
+.linea{
+  margin: 0;
+  padding-top: 0;
+  width: 100vw;
+  border-bottom:solid 3px #fd7023 
+}
+
 nav .list {
 display: flex;
 float:center;
-margin: 0;
-padding-top: 5px;
-padding-bottom: 1px;
+margin:0;
+padding-top: 1px;
+padding-bottom: 10px;
 justify-content:space-between;
 align-items:center
 }
 
 nav .list li {
 list-style: none;
-}
+} 
 
 nav .list a{
 display: block;
@@ -42,9 +49,10 @@ text-transform:uppercase;
 text-align: center;
 padding-top: 10px;
 padding-bottom: 5px;
-font-size: 13px;
+font-size: 15px;
 color: black;
 text-decoration: none;
+margin-bottom: 0;
 }
 
 nav .list a:hover{
@@ -52,20 +60,44 @@ background-color: #a788aba6;
 border-bottom: 2px solid black
 }
 
-.line {
-    overflow: hidden;
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-    align-items:start;
-    justify-content: space-evenly;
-   }
-
-  .socaloFooter{
-    font-family: "lato" black;
-    padding: 1%;
-    background-color:white;
-    width: 100%;
-
+footer {
+  margin-top: 5vw;
+  font-family: "lato" white
 }
+.media { 
+  display: flex;
+  flex-direction: row;
+  background-color: #fd7023;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 15px;       
+  }
 
+  a{
+      width: 150px;
+      justify-content: center;
+      margin: 25px;
+  }
+  .copyr {
+    background-color: black;
+    color: white;
+    justify-content: end;
+    padding-bottom: 10px;
+      
+  }
+  .mediaitem {
+      width: 40px;
+      margin: 25px;
+      
+  }
+
+  @media screen and (max-width: 480px) {
+                
+  .list {
+    flex-direction: column;
+    background-color: rgb(255, 122, 33);
+  }
+
+  a {
+     margin: 0;
+}
