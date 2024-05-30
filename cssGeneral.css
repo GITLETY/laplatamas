@@ -13,14 +13,17 @@ Body {
   display: flex;
   font-family: "lato";
   color: white;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 3%;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  margin-bottom: 5px;
+  margin-top: 5px;
   background-color: black;
   width: 100vw;
 }
+.linea {
+border-bottom: solid coral 3px;
+ }
 
 nav .list {
 display: flex;
@@ -34,10 +37,11 @@ align-items:center
 
 nav .list li {
 list-style: none;
+margin-bottom: 10px;
+
 }
 
-nav .list a{
-display: block;
+nav .list a {
 text-transform:uppercase;
 text-align: center;
 padding-top: 10px;
@@ -45,11 +49,12 @@ padding-bottom: 5px;
 font-size: 13px;
 color: black;
 text-decoration: none;
+margin-left: 25px;
 }
 
 nav .list a:hover{
 background-color: #a788aba6;
-border-bottom: 2px solid black
+border-bottom: 1px solid black
 }
 
 .line {
@@ -61,11 +66,59 @@ border-bottom: 2px solid black
     justify-content: space-evenly;
    }
 
+
+   footer {
+    margin-top: auto;
+}
+.media { 
+    display: flex;
+    flex-direction: row;
+    background-color: #fd9753;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 15px;      
+    margin-top: 50px;
+    }
+
+    a {
+    width: 150px;
+    justify-content: center;
+    
+          
+    }
+    .copyr {
+      font-size: 10px;
+      background-color: #fd9753;
+      color: rgb(17, 17, 17);
+      justify-content: end;
+      padding-bottom: 10px;
+    }
+    .mediaitem {
+        width: 40px;
+        margin: 25px;
+    }
+    #volver {
+      margin-top: 25px;
+    }
   .socaloFooter{
-    font-family: "lato" black;
-    padding: 1%;
+    font-family: "lato" black; 
+        padding: 1%;
     background-color:white;
     width: 100%;
 
 }
-
+@media screen and (max-width: 480px) {
+           
+  .list {
+    background-color: rgb(255, 122, 33);
+  flex-direction: column; 
+  text-align: center;
+    }
+ 
+    a {
+      margin: 0;
+  }
+  #volver {
+    margin-top: 25px;
+  }
+}
