@@ -10,13 +10,14 @@
     align-items: center;
     justify-content: center;
     border-top: 5px solid #fd7023;
-    border-bottom: 10px solid white;
+    border-bottom: 2px solid black;
     margin-top: 1%;
-    padding-top: 1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
 
 .imgg{
-      width: 20vw;
+      width: 50vw;
 }
 
 /* 
@@ -78,15 +79,15 @@ color: #fd7023;
     padding-left: 3%;
 
 }
-span
-{ color: black; 
+span{  
     font-size: 13px;
+    color: black;
     padding-left: 3%;
 }
 
 p {
     font-size: 10;
-    color: antiquewhite;
+    color: black;
     margin-left: auto;
     margin-right: auto;
     border-color: #fd7023;
@@ -117,7 +118,7 @@ body {
       background-color: white;
     }
     span { 
-        color: rgb(255, 255, 255); 
+        color:black; 
    }
 
     nav {

@@ -2,9 +2,22 @@
     margin: 0;
     padding: 0;
 }
+body header footer {
+    width: 100%;
+    
+}
+body {
+    margin:0
+    flex-direction: column;
+align-items: start;
 
-h1 { align-items: flex-start;
-margin: 40px 0 0 40px;
+
+}
+
+
+h1 { text-align: left;
+    margin-left: 35px;
+
 }
 
 .box {
@@ -12,29 +25,51 @@ margin: 40px 0 0 40px;
     width 100%;
     height: 700px;
     background-color: rgb(255, 255, 255);
-    border: solid rgb(255, 255, 255);
-    margin-bottom: 50px;
+   
 }
 
 .item {
     flex-direction: row; 
     gap: 10px;
+    flex-grow: 1;
     justify-content: center; 
     width: 28%;
-    height: auto;
-    border: solid rgb(255, 255, 255);
+    height: 500px;
     margin: 30px;
 }
 
 .item a { text-decoration: none; 
     font-size: 24px;
-    color: rgb(231, 97, 20);
+    color: rgb(0, 0, 0);
     margin-bottom: 35px;
-   
     
 }
-.item p { color: rgb(75, 75, 75);
-font-size: 14px;
-margin-top: 20px;
-
+.item p { 
+color: rgb(75, 75, 75);
+text-align: left;
 }
+
+footer {
+    margin-top: auto;
+}
+.media { 
+    display: flex;
+    flex-direction: row;
+    background-color: #fd9753;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 15px;
+           
+    }
+    .copyr {
+      background-color: #fd9753;
+      color: rgb(17, 17, 17);
+      justify-content: end;
+      padding-bottom: 10px;
+        
+    }
+    .mediaitem {
+        width: 40px;
+        margin: 25px;
+        
+    }
