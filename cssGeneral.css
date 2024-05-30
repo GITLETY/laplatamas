@@ -21,24 +21,27 @@ Body {
   background-color: black;
   width: 100vw;
 }
+
+
 .linea {
-border-bottom: solid coral 3px;
- }
+  margin: 0;
+  padding-top: 0;
+  width: 100vw;
+  border-bottom:solid 3px #fd7023 
+}
 
 nav .list {
 display: flex;
 float:center;
-margin: 0;
-padding-top: 5px;
-padding-bottom: 1px;
+margin:0;
+padding-top: 1px;
+padding-bottom: 10px;
 justify-content:space-between;
 align-items:center
 }
 
 nav .list li {
 list-style: none;
-margin-bottom: 10px;
-
 }
 
 nav .list a {
@@ -46,16 +49,16 @@ text-transform:uppercase;
 text-align: center;
 padding-top: 10px;
 padding-bottom: 5px;
-font-size: 13px;
+font-size: 15px;
 color: black;
 text-decoration: none;
-margin-left: 25px;
 }
 
 nav .list a:hover{
 background-color: #a788aba6;
 border-bottom: 1px solid black
 }
+
 
 .line {
     overflow: hidden;
@@ -100,25 +103,26 @@ border-bottom: 1px solid black
     #volver {
       margin-top: 25px;
     }
-  .socaloFooter{
+  .socaloFooter {
     font-family: "lato" black; 
         padding: 1%;
     background-color:white;
     width: 100%;
 
 }
-@media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 480px) {
            
-  .list {
-    background-color: rgb(255, 122, 33);
-  flex-direction: column; 
-  text-align: center;
+    .list {
+      background-color: rgb(255, 122, 33);
+    flex-direction: column; 
+    text-align: center;
+      }
+   
+      a {
+        margin: 0;
     }
- 
-    a {
-      margin: 0;
+    #volver {
+      margin-top: 25px;
+    }
   }
-  #volver {
-    margin-top: 25px;
-  }
-}
