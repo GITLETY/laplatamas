@@ -13,11 +13,9 @@
 
 <body>
     <header>
-        <div class="guarda">
-          Cuidado, rengas intentando respirar adultez. Quien no se ahoga, flota.
-        </div>
-  
-        <nav>
+      <div id="guarda"> Cuidado, rengas intentando respirar adultez. Quien no se ahoga, flota.    </div>
+      <div class="linea"> 
+              <nav>
             <section class="linea">
           <ul class="list">
             <li><a href="../index.html">Inicio</a></li>
@@ -26,21 +24,57 @@
             <li><a href="./Conocenos.html">Conocenos</a></li>
             <li><a >Encontranos</a></li>
           </ul>
-        </section>
-        </nav>
+              </nav>
+            </div>
           </header>
 
     <main>
+      <section class="introformularioEncontranos">
+        <h1> Contactate con nosotras</h1>
+        <p> Dejanos un mensaje o buscanos en redes</p>
 
-    </main>
+<!-- 
+  <div class="formularioEncontranos">
+     <label for="nombre">Nombre:</label>
+    <input type="text">
+    <label for="apellido">Apellido:</label>
+    <input type="text">
+    <label for="mensaje">Tu mensaje:</label>
+    <input type="text">
+  </div> -->
+  <form action="/sidefinir" method="dato">
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="name" name="user_name" />
+    </div>
+    <div>
+      <label for="mail">Correo electrónico:</label>
+      <input type="email" id="mail" name="user_email" />
+    </div>
+    <div>
+      <label for="msg">Mensaje:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">Envia tu mensaje</button>
+    </div>
+  </form>
+</section>
+
+  <div class="formularioEncontranos">
+  <a href="https://www.youtube.com" target="_blank"><img src="../images/youtubeicon.png" alt="iconoyoutube"/></a>
+  <a href="https://www.instagram.com" target="_blank"><img src="../images/instaicon.png" alt="icono instagram"/></a>
+  <a href="https://www.gmail.com" target="_blank"><img src="../images/emailicon.png" alt="iconoemail"></a>  
+  </div>
+
+</main>
 
     <footer>
               <div class="media">
           <div class="mediaitem"><a href="https://www.youtube.com" target="_blank"><img src="../images/youtubeicon.png" alt="iconoyoutube"></a></div>
           <div class="mediaitem"><a href="https://www.instagram.com" target="_blank"><img src="../images/instaicon.png" alt="icono instagram"></a></div>
           <div class="mediaitem"><a href="https://www.gmail.com" target="_blank"><img src="../images/emailicon.png" alt="iconoemail"></a></div>
-          <a href="../index.html"><img src="../images/logo tipografico blanco.png" alt="logo volver"></a>
-      </div> 
+          <a id="volver" href="../index.html"><img src="../images/logo tipografico blanco.png" alt="logo volver"/></a></div>
        <div class="copyr"><span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina </span></div>
                 </footer>
 </body>
