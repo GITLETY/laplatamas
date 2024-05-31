@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .list {
+    background-color: rgb(255, 122, 33);
+  flex-direction: column;
+  justify-content: center;
+  }
+
+  a {
+      margin: 0;
+  }
+ 
+  body{
+    
+width: 100vw;
+   }
+
+ .introformularioEncontranos{
+  margin-top: 1rem;
+  margin: 1rem;
+  font-size: large;
+  color: #1a1a1a;
+  align-items: center;
+  font-size: medium;
+  }
+
+  h1{
+    margin: 1rem;
+    font-size: large;
+    color: #000000;
+  }
+
+  .formularioEncontranos{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+       padding:3rem;
+    /* background-color:rgb(218, 184, 34); */
+justify-content: center;
+/* background-image: url('../images/textura@300x.png'); */
+  } 
+
+  form {
+    margin: 0 auto;
+    width: 50vw;
+    padding: 1em;
+    background-color:rgba(241, 137, 68, 0.356);
+  border: 1px solid #afafaf;
+  border-radius: 1rem;
+  background-image: url('../images/textura@300x.png');
+   }
+
+  label {
+    width: 90px;
+    text-align: right;
+
+ }
+
+@media screen and (min-width: 1080px) {
+
+  .list {
+    background-color: rgb(255, 255, 255);
+  flex-direction: row;
+  
+  }
+    body {
+background-color: rgb(255, 255, 255);    }
+     
+    nav {
+      background-color: rgb(255, 255, 255);
+      background-size: auto;
+      border: 10px;
+      padding: 10px;
+    }
+  
+  }

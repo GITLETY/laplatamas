@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  background-color: rgb(255, 122, 33);
+flex-direction: column;
+justify-content: center;
+}
+
+a {
+    margin: 0;
+}
+
+.IMGConocenos {
+  width: vw;
+}
+
+.TituloConocenos {
+  margin: 1rem;
+  font-size: large;
+  color: #000000;
+}
+
+.PresentacionConocenos {
+ 
+  /* border: 4px solid #cf233a; */
+  /* font-style: italic; */
+  overflow-wrap: break-word;
+  color: rgb(29, 29, 29);
+  text-align: left;
+  font-size: medium;
+  padding: 1rem;
+}
+
+.CajaTextosConocenos {
+  display: flex;
+  flex-direction: column;
+  /* border: 4px solid #13094d; */
+}
+
+.TextoConocenos {
+  padding: 2rem;
+  overflow-wrap: break-word;
+  /* border: 4px solid #860516; */
+  flex-direction: column;
+  text-align: left;
+  color:  rgba(29, 29, 29, 0.507);
+}
+
+.AgradecimientosConocenos {
+  padding: 1rem;
+  /* border: 4px solid #68671c; */
+  overflow-wrap: break-word;
+  margin-top: 1rem;
+}
+
+/* 
+@media screen and (min-width: 600px) {
+  nav {
+    background-color: rgb(150, 113, 137);
+    background-size: auto;
+    border: 10px;
+    padding: 10px;
+  }
+  body {
+    background-color: rgb(241, 241, 241);
+  }
+
+  .socaloFooter {
+    position: absolute;
+    background-color: rgb(16, 95, 160);
+    width: 100vw;
+  }
+} */
+
+@media screen and (min-width: 1080px) {
+
+.list {
+  background-color: rgb(255, 255, 255);
+flex-direction: row;
+
+}
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+
+  
+  .CajaTextosConocenos {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    background-color: rgb(255, 255, 255);
+    background-size: auto;
+    border: 10px;
+    padding: 10px;
+  }
+
+}
