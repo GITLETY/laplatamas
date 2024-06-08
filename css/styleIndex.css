@@ -3,12 +3,10 @@
     padding: 0;
 }
 
-
 .banner {
     width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;  
+    justify-content: center;
     border-bottom: 2px solid black;
     margin-top: 1%;
     padding-top: 3%;
@@ -18,8 +16,6 @@
 .imgg{
       width: 50vw;
 }
-
-
 
 .line {
     overflow: hidden;
@@ -36,10 +32,9 @@
     padding: 15px;
     border-style: hidden;
     width: 25vi;
-    height: 50vb;
+    height: auto;
     background: #fd7023;
 }
-
 
 h1 {
 font-family: "lato";
@@ -54,14 +49,11 @@ color: #fd7023;
     padding-left: 3%;
 
 }
-span{  
-    font-size: 13px;
-    color: white;
-    padding-left: 3%;
-}
+
 
 p {
     font-size: 10;
+    
     color: black;
     margin-left: auto;
     margin-right: auto;
@@ -70,34 +62,14 @@ p {
    margin-top: 5%;
 }
 
-
-
-/* @media screen and (min-width:600px) {
-  
-nav {
-    background-color: white;
-    background-size: auto;
-    border: 10px;
-    padding: 10px;
-}
-body {
-    background-color: white;
-  }
-  
-}*/
-    
-
-
-
-@media screen and (min-width: 1080px) {
-    body {
-      background-color: white;
-    }
-    span { 
-        color:white; 
+@media screen and (max-width: 480px) {
+                
+    .line {
+    flex-direction: column;
    }
-
-    .container{
-        display: flex;
-        flex-direction: row
-    }
+   .container {
+    justify-content: center; 
+    width: 80%;
+    height: auto;
+   }
+}

@@ -7,27 +7,70 @@
     <fontfamily><style> @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
     </style></fontfamily>
     <link rel="stylesheet" href="../cssGeneral.css"> <!-- Esta en todas  -->
-    <link rel="stylesheet" href=""> <!-- Particular de casa hoja de estilo  -->
+    <link rel="stylesheet" href="../css/Encontranos.css"> <!-- Particular de casa hoja de estilo  -->
     <title>Barracudas</title>
 </head>
 
 <body>
     <header>
-        <nav class="line">
-            <a href="../index.html">Inicio</a>
-            <a href="./Textos.html">Textos</a>
-            <a href="./TocToc.html">AudioVisual</a>
-            <a href="./Conocenos.html">Quienes somos</a>
-            <a>Contacto</a>
+      <div id="guarda"> Cuidado, rengas intentando respirar adultez. Quien no se ahoga, flota.    </div>
+     <div class="linea"> 
+              <nav>
+           
+          <ul class="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./Textos.html">Textos</a></li>
+            <li><a href="./TocToc.html">Toc Toc</a></li>
+            <li><a href="./Conocenos.html">Conocenos</a></li>
+            <li><a >Encontranos</a></li>
+          </ul>
+              </nav>
+            </div>
+          </header>
 
-        </nav> 
-    </header>
+    <main>
+      <h1> Contactate con nosotras</h1>
+      <section class="introformularioEncontranos">
+               <p> Dejanos un mensaje o buscanos en redes</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed delectus impedit! Eos aperiam esse reprehenderit accusantium. Minus possimus, porro expedita amet, voluptatibus deleniti velit commodi ad nam recusandae provident.</p>
+</section>
+
+  <div class="formularioEncontranos">
+
+    <form action="/sidefinir" method="dato">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="name" name="user_name" />
+      </div>
+      <div>
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="user_email" />
+      </div>
+      <div>
+        <label for="msg">Mensaje:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit">Envia tu mensaje</button>
+      </div>
+    </form>
+
+  <!-- <div class="redesEncontranos"> 
+  <a href="https://www.youtube.com" target="_blank"><img src="../images/youtubeicon.png" alt="iconoyoutube"/></a>
+  <a href="https://www.instagram.com" target="_blank"><img src="../images/instaicon.png" alt="icono instagram"/></a>
+  <a href="https://www.gmail.com" target="_blank"><img src="../images/emailicon.png" alt="iconoemail"></a>  
+  </div>  -->
+
+</div>
+</main>
 
     <footer>
-
-        <div class="socaloFooter">
-            <span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina - Savino </span>
-        </div>
-        </footer>
+              <div class="media">
+          <div class="mediaitem"><a href="https://www.youtube.com" target="_blank"><img src="../images/youtubeicon.png" alt="iconoyoutube"></a></div>
+          <div class="mediaitem"><a href="https://www.instagram.com" target="_blank"><img src="../images/instaicon.png" alt="icono instagram"></a></div>
+          <div class="mediaitem"><a href="https://www.gmail.com" target="_blank"><img src="../images/emailicon.png" alt="iconoemail"></a></div>
+          <a id="volver" href="../index.html"><img src="../images/logo tipografico blanco.png" alt="logo volver"/></a></div>
+       <div class="copyr"><span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina </span></div>
+                </footer>
 </body>
 </html>
