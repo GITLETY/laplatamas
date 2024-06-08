@@ -70,7 +70,7 @@ border-bottom: 1px solid black
 .media { 
     display: flex;
     flex-direction: row;
-    background-color: #fd9753;
+    background-color: #fd7023;
     flex-grow: 1;
     justify-content: center;
     gap: 15px;      
@@ -97,15 +97,32 @@ border-bottom: 1px solid black
   @media screen and (max-width: 480px) {
            
     .list {
-    background-color: rgb(255, 122, 33);
     flex-direction: column; 
+    height: auto;
+    width: 100%;
     text-align: center;
       }
    
-      a {
+      a {   
+        flex-direction: column; 
+        height: auto;
+        width: 100%;
+        text-align: center;
         margin: 0;
     }
     #volver {
       margin-top: 25px;
     }
   }
+
+  @media screen and (max-width:800px) {
+    .list {
+        flex-direction: column;
+        height:auto;
+    }
+    a {
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
