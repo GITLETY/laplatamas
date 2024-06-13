@@ -1,24 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700; 1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,9 00&familia= Sedán:ital@0;1&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+  }
 
-.section1{
-    border: solid blue;
+.flota{
+    width: 30rem;
     display: flex;
+    align-items: center;
 }
-img{
-width: 15vw;
-height: 25vh;
+  .pez{
+    width: 13rem;
+    display: flex;
+    align-items: center;
+  }
+ 
+.pezcadito{
+    width: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+  .pecesito{
+    width: 13rem;
+    display: flex;
+    align-items: center;
+  }
+ 
+.section1{
+    display: flex;
 }
 
 .conteiner{
 border: 2px solid red;
-
+display: flex;
+flex-direction: column;
 }
-        .conteinerdiv{
-            
-            padding: 9rem; 
-            width: 180px;
-            margin: 0.5rem 0.1rem 5rem 6rem;
-            display: inline-block;
-            background-color: antiquewhite;
-        }
+        .conteinersec1{
+            padding: 5rem;
+           flex-direction: column;
+          /* text-align: left;*/
+           width: 400px;
+           height: 400px;
+        overflow: hidden;
+   background-color: antiquewhite;}
+
+           /* .conteinersec2{
+                padding: 5rem;
+                flex-direction: column;
+           text-align: left;
+           width: 400px;
+           height: 400px;
+        overflow: hidden;
+                background-color: antiquewhite;}*/
+
+           
+     
 
