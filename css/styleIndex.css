@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    font-family: "lato", sans-serif;
+  }
+
 .banner {
     width: 100vw;
     display: flex;
@@ -29,22 +33,56 @@
 .container {  
     display: flex;;
     flex-wrap: wrap;
-    padding: 15px;
+    padding-top: 1vi;
+    padding-bottom: 1vi;
+    padding-right: 1vi;
+    padding-left: 1vi ;
+    margin-top: 3vi;
     border-style: hidden;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black ;
+    border-left: 1px solid black ;
     width: 25vi;
     height: auto;
-    background: #fd7023;
+    background: white;
+    text-decoration: none;
 }
 
 h1 {
+display: flex;
 font-family: "lato";
 font-size:  bold; 
 font-size: 28px;
-color: #fd7023;
+color: white;
+background-color: black;
+width: 100vw;
 }
 
-.tppal 
-{ padding-top: 30px;
+h2{
+    font-family: "lato";
+    font-size:larger;
+    text-align: center;
+    color:black;
+    background-color: white;
+    border-bottom: 1px solid black; 
+    border-top:1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px ;
+    text-align: center;
+}
+h2:hover{
+    background-color:#a788aba6 ;
+
+}
+
+
+.tppal {
+    padding-top: 30px;
     padding-bottom: 1%;
     padding-left: 3%;
 
@@ -61,15 +99,34 @@ p {
    margin-top: 5%;
 }
 
+#inf{
+    font-size: larger;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    width: 100vw;
+    border-bottom: 1px solid black;
+    background: #a788aba6;
+
+}
+.loguito{
+    width: 7%;
+
+    
+}
+
+
 @media screen and (max-width:800px) {
     .line {
         flex-direction: column;
         height:auto;
     }
     .container{
-        justify-content: center;
         width: 80%;
         height: auto;
+        justify-content: center;
+        margin-left: 10%;
     }
 }
     
@@ -84,5 +141,6 @@ p {
     justify-content: center; 
     width: 80%;
     height: auto;
+    margin-left: 10%;
    }
 }

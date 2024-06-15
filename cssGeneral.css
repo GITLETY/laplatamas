@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-Body {
+body {
   font-family: "lato", sans-serif;
 }
 
@@ -26,6 +26,7 @@ Body {
   width: 100vw;
   border-bottom:solid 3px #fd7023 
 }
+
 
 nav .list {
 display: flex;
@@ -71,6 +72,8 @@ border-bottom: 1px solid black
     display: flex;
     flex-direction: row;
     background-color: #fd7023;
+    width: 100vw;
+    padding: 0%;
     flex-grow: 1;
     justify-content: center;
     gap: 15px;      
