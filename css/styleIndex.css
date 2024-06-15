@@ -50,13 +50,7 @@ body {
 }
 
 h1 {
-display: flex;
-font-family: "lato";
-font-size:  bold; 
-font-size: 28px;
-color: white;
-background-color: black;
-width: 100vw;
+
 }
 
 h2{
@@ -82,9 +76,15 @@ h2:hover{
 
 
 .tppal {
-    padding-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: black;
+    width: 100vw;
+    padding-top: 1%;
     padding-bottom: 1%;
-    padding-left: 3%;
+    padding-left: 5%;
 
 }
 
@@ -96,12 +96,12 @@ p {
     margin-right: auto;
     border-color: #fd7023;
     border: 10ch;
-   margin-top: 5%;
+    margin-top: 5%;
 }
 
 #inf{
     font-size: larger;
-    padding-left: 3%;
+    padding-left: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 1%;
@@ -111,11 +111,20 @@ p {
 
 }
 .loguito{
-    width: 7%;
-
-    
+    position: absolute;
+    width: 7vw;
+    height: 9vw;
+    right:10px;
 }
 
+.pp{
+    font-family: "lato";
+    font-size:  bold; 
+    font-size: 28px;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
 
 @media screen and (max-width:800px) {
     .line {
