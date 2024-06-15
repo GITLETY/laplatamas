@@ -10,16 +10,40 @@ body {
 }
 
 #guarda{
-  display: flex;
+  position: relative;
   font-family:"lato";
   color: white;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-left: 3%;
   margin-top: 5px;
   background-color: black;
   width: 100vw;
 }
+
+#pp{
+  font-family:"lato";
+  color: white;
+  align-items: center;
+  justify-content: left;
+  padding-left: 11%;
+  margin-top: 0;
+}
+#guarda2{
+  position: absolute;
+  height: 2vw;
+  width: 9vw;
+}
+
+#guarda1{
+  position: absolute;
+  height: 3vw;
+  width: 3vw;
+  left: 150px;
+  top: 3px;
+}
+
+
 
 
 .linea {

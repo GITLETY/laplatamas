@@ -112,7 +112,25 @@ p {
     width: 7vw;
     height: 9vw;
     right:10px;
+    transform: rotate(15deg);
 }
+
+.loguito1{
+    position:absolute;
+    width: 7vw;
+    height: 9vw;
+    right: 90px;
+    transform: rotate(-15deg);
+}
+
+.loguito2{
+    position: absolute;
+    width: 7vw;
+    height: 9vw;
+    right: 170px;
+    transform: rotate(15deg);
+}
+
 
 .pp{
     font-family: "lato";
