@@ -54,6 +54,7 @@ body {
 }
 
 
+
 .linea {
   width: 100%;
   border-bottom:solid 3px #fd7023 
@@ -186,7 +187,7 @@ border-bottom: 1px solid black
       right: 1%;
       left: 2%;
       height: auto;
-      width: 104%;
+      width: 100%;
       
       
     }

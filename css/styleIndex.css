@@ -21,7 +21,7 @@ body {
 }
 
 .imgg{
-      width: 35%;
+      width: 40%;
 }
 
 .line {
@@ -46,7 +46,7 @@ body {
     border-top: 1px solid black;
     border-right: 1px solid black ;
     border-left: 1px solid black ;
-    width: 25vi;
+    width: 25%;
     height: auto;
     background: white;
     text-decoration: none;
