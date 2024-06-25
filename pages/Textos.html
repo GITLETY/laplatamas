@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/FavIconBarrac.png" type="image/x-icon"> 
-    <fontfamily><style> @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    <fontfamily><style> @import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap';
     </style></fontfamily>
     <link rel="stylesheet" href="../cssGeneral.css"> <!-- Esta en todas  -->
     <link rel="stylesheet" href="/css/Textos.css"> <!-- Particular de casa hoja de estilo  -->
@@ -13,23 +13,27 @@
 </head>
 
 <body>
-    <header>
-        <nav class="line">
-            <a href="../index.html">Inicio</a>
-            <a>Textos</a>
-            <a href="./TocToc.html">AudioVisual</a>
-            <a href="./Conocenos.html">Quienes somos</a>
-            <a href="./Contacto.html">Contacto</a>
-        </nav> 
+    <div id="guarda">Cuidado, rengas intentando respirar adultez. Quien no se ahoga, flota.</div>    
+    <div class="linea">
+         <nav>
+                  <ul class="list">
+                  <li><a href="../index.html">Inicio</a></li>
+                  <li><a href="Textos.html">Textos</a></li>
+                  <li><a href="TocToc.html">Toc Toc</a></li>
+                  <li><a href="Conocenos.html">Conocenos</a></li>
+                  <li><a href="Encontranos.html">Encontranos</a></li>
+              </ul>
+         </nav>
+     </div>
         <section class="section1">
-            <img src="/images/pezBarrac - copia.png" alt="PEZ">
-            <img src="/images/pecesitoBarrac - copia - copia.png" alt="PECESITO">
-           <img src="/images/pezcaditoBarrac - copia.png" alt="pescado">
-             <h1>QUIEN NO SE AHOGA, FLOTA</h1>
-         </section>
+        <div class="pez"><img src="../images/pezBarrac - copia.png" alt="PEZ"></div>
+        <div class="pez"><img src="../images/pecesitoBarrac - copia - copia.png" alt="PECESITO"></div>
+        <div class="pez"><img src="../images/pezcaditoBarrac - copia.png" alt="pescado"></div>
+        <div class="slogan"><img src="../images/flota.jpg" alt="slogan"></div>
+                   </section>
     </header>
 
-    <main></main>
+    <main>
 
     <section class="conteiner">
         <div class="conteinerdiv">
@@ -49,12 +53,16 @@
             <strong>overflow</strong>
         </div>
         </section>
+    </main>
 
-<footer>
-
-        <div class="socaloFooter">
-            <span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina - Savino </span>
-        </div>
-     </footer>
+    <footer>
+              <div class="media">
+          <div class="mediaitem"><a href="https://www.youtube.com" target="_blank"><img src="../images/youtubeicon.png" alt="iconoyoutube"></a></div>
+          <div class="mediaitem"><a href="https://www.instagram.com" target="_blank"><img src="../images/instaicon.png" alt="icono instagram"></a></div>
+          <div class="mediaitem"><a href="https://www.gmail.com" target="_blank"><img src="../images/emailicon.png" alt="iconoemail"></a></div>
+          <a id="volver" href="../index.html"><img src="../images/logo tipografico blanco.png" alt="logo volver"/></a></div>
+       <div class="copyr"><span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina </span></div>
+                </footer>
 </body>
+
 </html>
