@@ -2,6 +2,7 @@
 
 .section1 {
 display: flex;
+flex-direction: row;
 justify-content: center;
 height: 100px;
 }
@@ -33,11 +34,7 @@ gap: 20px;
 
         @media screen and (max-width: 480px) {
 
-           .slogan {
-            flex-direction: column;
-            height: auto;
-           }
-         .conteiner{
+                 .conteiner{
             flex-direction: column;
             height: auto;
          }
