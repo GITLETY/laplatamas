@@ -1,0 +1,1 @@
+alert(`Te estas redireccionando a otra pagina web`)
