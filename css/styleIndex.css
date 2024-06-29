@@ -34,31 +34,63 @@ body {
    }
 
 .container {  
-    display: flex;;
+    display: flex;
+    position: relative;
     flex-wrap: wrap;
-    padding-top: 1vi;
+    padding-top: 0px;
     padding-bottom: 1vi;
     padding-right: 1vi;
     padding-left: 1vi ;
-    margin-top: 3vi;
+    margin-top: 2vi;
     border-style: hidden;
-    border-bottom: 1px solid black;
+   /* border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-right: 1px solid black ;
-    border-left: 1px solid black ;
+    border-left: 1px solid black ;*/
     width: 25%;
     height: auto;
     text-decoration: none;
     color: black; 
+    background-color: antiquewhite;
+    overflow: hidden;
   
 }
 
-h2:hover{
-    background-color:antiquewhite;
-
+.imgh{
+    width: 340px; /* Ajusta el ancho al contenedor */
+    height: 210px;
+    display: block;
+    padding-top: 0;
+    margin-top: 0;
+    border-bottom: 2px solid #F7C815 ;
 }
 
+h2{
+    font-family: Verdana;
+    font-size:large;
+    color: antiquewhite;
+    align-items:center;
+    justify-content: left;
+    padding-top: 2px;
+    padding-left: 5px;
+    height: 35px;
+    text-shadow: 
+     1px  1px 0 #000;
 
+}
+.folio{
+    position: absolute;
+    background:  #F7C815; 
+    border:2px solid #f1c101;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 130px;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+    top: 0px;
+    
+}
 .tppal {
     position: relative;
     display: flex;
@@ -94,7 +126,7 @@ p {
     padding-right: 5%;
     width: 100%;
     border-bottom: 1px solid black;
-    background: #a788aba6;
+    background:antiquewhite /*#a788aba6*/;
 
 }
 .loguito{
