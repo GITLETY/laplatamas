@@ -48,34 +48,13 @@ body {
     border-left: 1px solid black ;
     width: 25%;
     height: auto;
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    text-decoration: none;
+    color: black; 
   
 }
+
 h2:hover{
-    background-color:#a788aba6 ;
+    background-color:antiquewhite;
 
 }
 
