@@ -18,79 +18,13 @@ body {
     margin-top: 1%;
     padding-top: 3%;
     padding-bottom: 2%;
+
 }
 
 .imgg{
       width: 40%;
 }
 
-.line {
-    overflow: hidden;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items:start;
-    justify-content: space-evenly;
-   }
-
-.container {  
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    padding-top: 0px;
-    padding-bottom: 1vi;
-    padding-right: 1vi;
-    padding-left: 1vi ;
-    margin-top: 2vi;
-    border-style: hidden;
-   /* border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-right: 1px solid black ;
-    border-left: 1px solid black ;*/
-    width: 25%;
-    height: auto;
-    text-decoration: none;
-    color: black; 
-    background-color: antiquewhite;
-    overflow: hidden;
-  
-}
-
-.imgh{
-    width: 340px; /* Ajusta el ancho al contenedor */
-    height: 210px;
-    display: block;
-    padding-top: 0;
-    margin-top: 0;
-    border-bottom: 2px solid #F7C815 ;
-}
-
-h2{
-    font-family: Verdana;
-    font-size:large;
-    color: antiquewhite;
-    align-items:center;
-    justify-content: left;
-    padding-top: 2px;
-    padding-left: 5px;
-    height: 35px;
-    text-shadow: 
-     1px  1px 0 #000;
-
-}
-.folio{
-    position: absolute;
-    background:  #F7C815; 
-    border:2px solid #f1c101;
-    border-bottom-right-radius: 10px;
-    /*border-top-right-radius: 10px;*/
-    width: 130px;
-    justify-content: center;
-    text-align: center;
-    left: 0;
-    top: 0px;
-    
-}
 .tppal {
     position: relative;
     display: flex;
@@ -103,14 +37,15 @@ h2{
     padding-left: 5%;
     padding-right: 5%;
 
+
 }
 
 
 p {
     font-size: 10;
     color: black;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0%;
+    margin-right: 0%;
     border-color: #fd7023;
     border: 10ch;
     margin-top: 5%;
@@ -133,7 +68,8 @@ p {
     position: absolute;
     width: 7vw;
     height: 9vw;
-    right:10px;
+    right:15px;
+   /* left: 1235px;*/
     transform: rotate(15deg);
 }
 
@@ -142,6 +78,7 @@ p {
     width: 7vw;
     height: 9vw;
     right: 90px;
+   /* left: 1160px;*/
     transform: rotate(-15deg);
 }
 
@@ -150,6 +87,7 @@ p {
     width: 7vw;
     height: 9vw;
     right: 170px;
+  /*  left: 1085px;*/
     transform: rotate(15deg);
 }
 
@@ -164,7 +102,121 @@ p {
     width: 100%;
 }
 
+.line {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items:start;
+    justify-content: space-evenly;
+   }
+
+.container {  
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px ;
+    margin-top: 5vi;
+    border-style: hidden;
+   /* border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black ;
+    border-left: 1px solid black ;*/
+    width: 25%;
+    height: auto;
+    text-decoration: none;
+    color: black; 
+    background-color: antiquewhite;
+    overflow: hidden;
+  
+}
+
+.imgh{
+    width: 340px; /* Ajusta el ancho al contenedor */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    padding-top: 0;
+   /* margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;*/
+    border-bottom: 2px solid #F7C815 ;
+}
+
+
+.folio{
+    position: absolute;
+    display:flex;
+    overflow: hidden;
+    background:  #F7C815; 
+    border:2px solid #f1c101;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 35%;
+    height: 8%;
+    text-align: center;
+    font-family: Verdana;
+    font-size:1.3vw;
+    color: antiquewhite;
+    text-shadow: 
+     1px  1px 0 #000;
+    margin-top: 0;
+    left: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: right;
+}
+
+.borde{
+
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+
+}
+@media sreen and(max-width: 1024px) {
+
+    .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto;
+        display: block;
+        object-fit: cover;
+        padding-top: 0;
+    }
+
+}
 @media screen and (max-width:800px) {
+
+    .loguito{
+        position: absolute;
+        width: 9vw;
+        height: 12vw;
+        right:5%;
+        /*left: 87%;*/
+        transform: rotate(15deg);
+    }
+    .loguito1{
+        position:absolute;
+        width: 9vw;
+        height: 12vw;
+        right: 15%;
+        /*left: 80%;*/
+        transform: rotate(-15deg);
+    }
+
+    .loguito2{
+        position: absolute;
+        width: 9vw;
+        height: 12vw;
+        right: 25%;
+      /*  left: 73%;*/
+        transform: rotate(15deg);
+    }
     .line {
         flex-direction: column;
         height:auto;
@@ -175,9 +227,41 @@ p {
         justify-content: center;
         margin-left: 10%;
     }
-}
-    
 
+    .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto;
+        display: block;
+        object-fit: cover;
+        padding-top: 0;
+    }  
+
+    .folio{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+        font-size:3.5vw;
+        text-align: right;
+        width: 30%;
+    } 
+    
+}
+@media screen and (min-width:800px){
+    .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto;
+        display: block;
+        object-fit: cover;
+        padding-top: 0;
+    }   
+
+
+}
+
+  
 @media screen and (max-width: 480px) {
                 
     .line {
@@ -185,9 +269,17 @@ p {
     height: auto
    }
    .container {
+    flex-direction: column;
     justify-content: center; 
     width: 80%;
     height: auto;
     margin-left: 10%;
    }
+   .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto;
+        display: block;
+        object-fit: cover;
+        padding-top: 0;
+    }
 }
