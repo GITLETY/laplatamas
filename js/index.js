@@ -63,7 +63,7 @@ function newsletter(){
         console.log("Apellido:", apellidoIngresado);
         console.log("Email:", emailIngresado);
         
-      let nombreDelSuscriptor;
+        let nombreDelSuscriptor;
         let suscriptorEncontrado = false;
         console.log(db.length());
         for(let i=0; i< db.length() ; i++){
