@@ -1,52 +1,99 @@
 
+
 function newsletter(){
+    let dbSuscripciones= [
+        {
+        "nombre": "Yesica",
+        "apellido":"Ochoa",
+        "email": "yesicadanielaochoa@gmail.com",
+        },
+    
+        { 
+         "nombre": "Laura",
+         "apellido": "Rodriguez",
+         "email": " lrodriguez@gmail.com"
+        },
+        
+        {           
+        "nombre": "Marina",
+        "apellido": "lorca",
+        "email": " lorcamarina@gmail.com"
+        }
+    
+    ]
+    dbSuscripciones = JSON.stringify(dbSuscripciones)
+    
+    let db = JSON.parse(dbSuscripciones)
+    console.log(db)
+
      if (confirm('Podes recibir contenido preferencial ¿Quieres suscribirte a nuestro Newsletter?')){
        
-        let nombre
-        let apellido
-        let email
+        let nombreIngresado
+        let apellidoIngresado
+        let emailIngresado
 
         do { 
-            nombre = prompt('Por favor, ingresa tu nombre:');
-            console.log(nombre);
-            if (nombre === ''){
+            nombreIngresado = prompt('Por favor, ingresa tu nombre:');
+            if (nombreIngresado === ''){
             alert("Debes ingresar tu nombre para continuar");
             }
-        }while(nombre === '')
+        }while(nombreIngresado === '')
 
-     if(nombre !== null){
+     if(nombreIngresado !== null){
         
         do { 
-            apellido = prompt('Por favor, ingresa tu apellido:');
-            if (apellido === ''){
+            apellidoIngresado = prompt('Por favor, ingresa tu apellido:');
+            if (apellidoIngresado === ''){
             alert("Debes ingresar tu apellido para continuar.");
             }
-        }while(apellido === '')
+        }while(apellidoIngresado === '')
     
 
-      if(apellido !== null){ 
+      if(apellidoIngresado !== null){ 
     
-        do { email = prompt('Por favor, ingresa tu mail:');
-        if (email === '') {
+        do { emailIngresado = prompt('Por favor, ingresa tu mail:');
+        if (emailIngresado === '') {
             alert("Debes ingresar tu email para continuar");
             }
-        }while(email === '')
+        }while(emailIngresado === '')
 
-      if(email !== null){
+      if(emailIngresado != null){
 
-        console.log("Nombre:", nombre);
-        console.log("Apellido:", apellido);
-        console.log("Email:", email);
+        console.log("Nombre:", nombreIngresado);
+        console.log("Apellido:", apellidoIngresado);
+        console.log("Email:", emailIngresado);
+        
+      let nombreDelSuscriptor;
+        let suscriptorEncontrado = false;
+        console.log(db.length());
+        for(let i=0; i< db.length() ; i++){
+        if(db[i].email === emailIngresado){
+            
+                nombreDelSuscriptor = db[i].nombre;
+                suscriptorEncontrado = true; 
+                alert("Usted ya está suscripto");
+            } 
+        }
+        if (suscriptorEncontrado !== true){
+             db.push({
+                nombre : nombreIngresado,
+                apellido : apellidoIngresado,
+                email : emailIngresado
+                }
+            )
+            
+            let saludo = `Bienvenido ${nombreIngresado} ${apellidoIngresado} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
+            alert(saludo)
 
-        let saludo = `Bienvenido ${nombre} ${apellido}a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
-        alert(saludo)
+            console.log("Saludo mostrado:", saludo); 
 
-        console.log("Saludo mostrado:", saludo);
-
-       } } }
-   if(nombre === null || apellido === null || email === null){ alert( "No se ha podido suscribir"); }
- } else {
-        console.log("Usuario canceló la suscripción al newsletter."); 
-      }
-}
+        }
+            
+    } } }
+    if(nombreIngresado === null || apellidoIngresado === null || emailIngresado === null){ 
+        alert( "No se ha podido suscribir"); }
+  } else {
+         console.log("Usuario canceló la suscripción al newsletter."); 
+       }
+ }
 
