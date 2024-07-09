@@ -65,8 +65,8 @@ function newsletter(){
         
         let nombreDelSuscriptor;
         let suscriptorEncontrado = false;
-        console.log(db.length());
-        for(let i=0; i< db.length() ; i++){
+        console.log(db.length);
+        for(let i=0; i< db.length; i++){
         if(db[i].email === emailIngresado){
             
                 nombreDelSuscriptor = db[i].nombre;
