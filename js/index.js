@@ -65,8 +65,8 @@ function newsletter(){
         
         let nombreDelSuscriptor;
         let suscriptorEncontrado = false;
-        console.log(db.length());
-        for(let i=0; i< db.length() ; i++){
+        console.log(db.length);
+        for(let i=0; i< db.length; i++){
         if(db[i].email === emailIngresado){
             
                 nombreDelSuscriptor = db[i].nombre;
@@ -80,10 +80,14 @@ function newsletter(){
                 apellido : apellidoIngresado,
                 email : emailIngresado
                 }
+         
             )
+
+            nombreDelSuscriptor = [nombreIngresado + " " + apellidoIngresado];
+            sessionStorage.setItem('suscriptor', [nombreDelSuscriptor +" " + emailIngresado])
             
-            let saludo = `Bienvenido ${nombreIngresado} ${apellidoIngresado} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
-            alert(saludo)
+            let saludo = `Bienvenido ${nombreDelSuscriptor} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
+            alert(saludo);
 
             console.log("Saludo mostrado:", saludo); 
 
