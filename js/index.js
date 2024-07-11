@@ -5,7 +5,7 @@ function newsletter(){
         {
         "nombre": "Yesica",
         "apellido":"Ochoa",
-        "email": "yesicadanielaochoa@gmail.com",
+        "email": "yesicadanielaochoa@gmail.com"
         },
     
         { 
@@ -64,6 +64,7 @@ function newsletter(){
         console.log("Email:", emailIngresado);
         
         let nombreDelSuscriptor;
+        let suscriptor
         let suscriptorEncontrado = false;
         console.log(db.length);
         for(let i=0; i< db.length; i++){
@@ -75,16 +76,19 @@ function newsletter(){
             } 
         }
         if (suscriptorEncontrado !== true){
-             db.push({
-                nombre : nombreIngresado,
-                apellido : apellidoIngresado,
-                email : emailIngresado
+            const suscriptorPorGuardar = {
+                 nombre : nombreIngresado,
+                 apellido : apellidoIngresado,
+                 email : emailIngresado
                 }
-         
-            )
 
+             db.push(suscriptorPorGuardar);
+             suscriptor = suscriptorPorGuardar; 
+         
             nombreDelSuscriptor = [nombreIngresado + " " + apellidoIngresado];
             sessionStorage.setItem('suscriptor', [nombreDelSuscriptor +" " + emailIngresado])
+            sessionStorage.setItem( 'datosDelSuscriptor', JSON.stringify(suscriptor))
+
             
             let saludo = `Bienvenido ${nombreDelSuscriptor} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
             alert(saludo);
