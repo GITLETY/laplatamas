@@ -64,7 +64,6 @@ function newsletter(){
         console.log("Email:", emailIngresado);
         
         let nombreDelSuscriptor;
-        let suscriptor
         let suscriptorEncontrado = false;
         console.log(db.length);
         for(let i=0; i< db.length; i++){
@@ -82,12 +81,11 @@ function newsletter(){
                  email : emailIngresado
                 }
 
-             db.push(suscriptorPorGuardar);
-             suscriptor = suscriptorPorGuardar; 
+             db.push(suscriptorPorGuardar); 
          
             nombreDelSuscriptor = [nombreIngresado + " " + apellidoIngresado];
             sessionStorage.setItem('suscriptor', [nombreDelSuscriptor +" " + emailIngresado])
-            sessionStorage.setItem( 'datosDelSuscriptor', JSON.stringify(suscriptor))
+            sessionStorage.setItem( 'datosDelSuscriptor', JSON.stringify(suscriptorPorGuardar))
 
             
             let saludo = `Bienvenido ${nombreDelSuscriptor} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
