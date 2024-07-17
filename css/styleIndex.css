@@ -8,6 +8,7 @@
 body {
     font-family: "lato", sans-serif;
     margin: 0 0 0 0;
+
   }
 
 .banner {
@@ -136,9 +137,9 @@ p {
 
 .imgh{
     width: 340px; /* Ajusta el ancho al contenedor */
-    height: auto;
+    height: 240px;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
     padding-top: 0;
    /* margin-top: 0;
     margin-left: 0;
@@ -152,7 +153,7 @@ p {
     display:flex;
     overflow: hidden;
     background:  #F7C815; 
-    border:2px solid #f1c101;
+    border:2px solid #e2b500;
     border-bottom-right-radius: 10px;
     /*border-top-right-radius: 10px;*/
     width: 35%;
@@ -172,20 +173,70 @@ p {
 
 .borde{
 
-    text-align: center;
+    text-align:justify;
     padding-left: 5px;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
-
 }
+
+
+.folio1{
+    position: absolute;
+    display:flex;
+    overflow: hidden;
+    background: #fd7023; 
+    border:2px solid #f05502;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 35%;
+    height: 8%;
+    text-align: center;
+    font-family: Verdana;
+    font-size:1.3vw;
+    color: antiquewhite;
+    text-shadow: 
+     1px  1px 0 #000;
+    margin-top: 0;
+    left: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: right;
+}
+
+
+
+.folio2{
+    position: absolute;
+    display:flex;
+    overflow: hidden;
+    background-color:#843c8b;
+    border:2px solid #4f2a53;;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 35%;
+    height: 6%;
+    text-align: center;
+    font-family: Verdana;
+    font-size:1.3vw;
+    color: antiquewhite;
+    text-shadow: 
+     1px  1px 0 #000;
+    margin-top: 0;
+    left: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: right;
+}
+
+
 @media sreen and(max-width: 1024px) {
 
     .imgh{
         width: 100%; /* Ajusta el ancho al contenedor */
         height: auto;
         display: block;
-        object-fit: cover;
+        object-fit: contain;
         padding-top: 0;
     }
 
@@ -232,11 +283,37 @@ p {
         width: 100%; /* Ajusta el ancho al contenedor */
         height: auto;
         display: block;
-        object-fit: cover;
+        object-fit: contain;
         padding-top: 0;
     }  
 
     .folio{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+        font-size:3.5vw;
+        text-align: right;
+        width: 30%;
+    } 
+  
+
+    .folio1{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+        font-size:3.5vw;
+        text-align: right;
+        width: 30%;
+    } 
+ 
+
+    .folio2{
         position: absolute;
         margin-top: 0;
         left: 0;
@@ -252,13 +329,48 @@ p {
 @media screen and (min-width:800px){
     .imgh{
         width: 100%; /* Ajusta el ancho al contenedor */
-        height: auto;
+        height: 100%;
         display: block;
-        object-fit: cover;
+        overflow: auto;
         padding-top: 0;
-    }   
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+    }      .folio{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
 
+    } 
+  
 
+    .folio1{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+
+    } 
+ 
+
+    .folio2{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+
+    }  
 }
 
   
@@ -277,9 +389,10 @@ p {
    }
    .imgh{
         width: 100%; /* Ajusta el ancho al contenedor */
-        height: auto;
+        height: 40vw;
         display: block;
-        object-fit: cover;
+        overflow: auto;
         padding-top: 0;
     }
+   
 }
