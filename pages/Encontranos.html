@@ -41,21 +41,21 @@
 
   <div class="formularioEncontranos">
 
-    <form action="/sidefinir" method="dato">
+      <form onsubmit="return validarFormulario()"> 
       <div>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="name" name="user_name" />
+        <input type="text" id="nombre" name="nombre" >
       </div>
       <div>
         <label for="mail">Correo electrónico:</label>
-        <input type="email" id="mail" name="user_email" />
+        <input type="email" id="mail" name="user_email" >
       </div>
       <div>
-        <label for="msg">Mensaje:</label>
-        <textarea id="msg" name="user_message"></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
       </div>
       <div class="button">
-        <button type="submit">Envia tu mensaje</button>
+        <button type="submit" value="Enviar">Envia tu mensaje</button>
       </div>
     </form>
 
@@ -69,12 +69,13 @@
 </main>
 
     <footer>
-              <div class="media">
+          <div class="media">
           <div class="mediaitem"><a href="https://www.youtube.com" target="_blank"><img src="../images/youtubeicon.png" alt="iconoyoutube"></a></div>
           <div class="mediaitem"><a href="https://www.instagram.com" target="_blank"><img src="../images/instaicon.png" alt="icono instagram"></a></div>
           <div class="mediaitem"><a href="https://www.gmail.com" target="_blank"><img src="../images/emailicon.png" alt="iconoemail"></a></div>
           <a id="volver" href="../index.html"><img src="../images/logo tipografico blanco.png" alt="logo volver"/></a></div>
-       <div class="copyr"><span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina </span></div>
-                </footer>
+          <div class="copyr"><span>&copy;Barracudas /Grupo LAPLATAMAS/ Angeleri - Medina - Ochoa - Brugina </span></div>
+    </footer>
+<script src="../js/encontranos.js"></script>
 </body>
 </html>
