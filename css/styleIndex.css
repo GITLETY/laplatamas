@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    font-family: "lato", sans-serif;
+    margin: 0 0 0 0;
+
+  }
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    margin-top: 1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+
+}
+
+.imgg{
+      width: 40%;
+}
+
+.tppal {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items:center;
+    background-color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+
+}
+
+/*
+p {
+    font-size: 10;
+    color: black;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-color: #fd7023;
+    border: 10ch;
+    margin-top: 5%;
+}
+*/
+#inf{
+    font-size: larger;
+    justify-content: center;
+    text-align: justify;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background:antiquewhite /*#a788aba6*/;
+
+}
+.loguito{
+    position: absolute;
+    width: 7vw;
+    height: 9vw;
+    right:15px;
+   /* left: 1235px;*/
+    transform: rotate(15deg);
+}
+
+.loguito1{
+    position:absolute;
+    width: 7vw;
+    height: 9vw;
+    right: 90px;
+   /* left: 1160px;*/
+    transform: rotate(-15deg);
+}
+
+.loguito2{
+    position: absolute;
+    width: 7vw;
+    height: 9vw;
+    right: 170px;
+  /*  left: 1085px;*/
+    transform: rotate(15deg);
+}
+
+
+.pp{
+    font-family: "lato";
+    font-size:  bold; 
+    font-size: 28px;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.line {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items:start;
+    justify-content: space-evenly;
+   }
+
+.container {  
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px ;
+    margin-top: 5vi;
+    border-style: hidden;
+   /* border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black ;
+    border-left: 1px solid black ;*/
+    width: 25%;
+    height: auto;
+    text-decoration: none;
+    color: black; 
+    background-color: antiquewhite;
+    overflow: hidden;
+  
+}
+
+.imgh{
+    width: 340px; /* Ajusta el ancho al contenedor */
+    height: 240px;
+    display: block;
+    object-fit: contain;
+    padding-top: 0;
+   /* margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;*/
+    border-bottom: 2px solid #F7C815 ;
+}
+
+
+.folio{
+    position: absolute;
+    display:flex;
+    overflow: hidden;
+    background:  #F7C815; 
+    border:2px solid #e2b500;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 35%;
+    height: 8%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.3vw;
+    color: antiquewhite;
+    text-shadow: 
+     1px  1px 0 #000;
+    margin-top: 0;
+    left: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: right;
+}
+
+.borde{
+    font-size: 18px;
+    color:grey ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-shadow: 
+     3px  3px 3px #f8f7f7;
+}
+
+.cuadro{
+    font-size: 14px;
+    color: black ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    text-justify:auto;
+    text-align: justify;
+}
+
+.folio1{
+    position: absolute;
+    display:flex;
+    overflow: hidden;
+    background: #fd7023; 
+    border:2px solid #f05502;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 35%;
+    height: 8%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.3vw;
+    color: antiquewhite;
+    text-shadow: 
+     1px  1px 0 #000;
+    margin-top: 0;
+    left: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: right;
+}
+
+
+
+.folio2{
+    position: absolute;
+    display:flex;
+    overflow: hidden;
+    background-color:#843c8b;
+    border:2px solid #4f2a53;;
+    border-bottom-right-radius: 10px;
+    /*border-top-right-radius: 10px;*/
+    width: 35%;
+    height: 6%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.3vw;
+    color: antiquewhite;
+    text-shadow: 
+     1px  1px 0 #000;
+    margin-top: 0;
+    left: 0;
+    justify-content:center;
+    align-items: center;
+    text-align: right;
+}
+
+
+@media sreen and(max-width: 1024px) {
+
+    .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto;
+        display: block;
+        object-fit: contain;
+        padding-top: 0;
+    }
+
+}
+@media screen and (max-width:800px) {
+
+    .loguito{
+        position: absolute;
+        width: 9vw;
+        height: 12vw;
+        right:5%;
+        /*left: 87%;*/
+        transform: rotate(15deg);
+    }
+    .loguito1{
+        position:absolute;
+        width: 9vw;
+        height: 12vw;
+        right: 15%;
+        /*left: 80%;*/
+        transform: rotate(-15deg);
+    }
+
+    .loguito2{
+        position: absolute;
+        width: 9vw;
+        height: 12vw;
+        right: 25%;
+      /*  left: 73%;*/
+        transform: rotate(15deg);
+    }
+    .line {
+        flex-direction: column;
+        height:auto;
+    }
+    .container{
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: auto;
+        display: block;
+        object-fit: contain;
+        padding-top: 0;
+    }  
+    .borde{
+        font-size: 18px;
+        color:grey ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-shadow: 
+         3px  3px 3px #f8f7f7;
+         text-align: left;
+    }
+
+    .folio{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+        font-size:3.5vw;
+        text-align: right;
+        width: 30%;
+    } 
+  
+
+    .folio1{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+        font-size:3.5vw;
+        text-align: right;
+        width: 30%;
+    } 
+ 
+
+    .folio2{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+        font-size:3.5vw;
+        text-align: right;
+        width: 30%;
+    } 
+    
+}
+@media screen and (min-width:800px){
+    .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: 100%;
+        display: block;
+        overflow: auto;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    
+    }   
+    
+    .borde{
+        font-size: 18px;
+        color:grey ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-shadow: 
+         3px  3px 3px #f8f7f7;
+         text-align: left;
+    }
+    .folio{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+
+    } 
+  
+
+    .folio1{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+
+    } 
+ 
+
+    .folio2{
+        position: absolute;
+        margin-top: 0;
+        left: 0;
+        top:0;
+        justify-content:center;
+        align-items: center;
+
+    }  
+}
+
+  
+@media screen and (max-width: 480px) {
+                
+    .line {
+    flex-direction: column;
+    height: auto
+   }
+   .container {
+    flex-direction: column;
+    justify-content: center; 
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+   }
+   .imgh{
+        width: 100%; /* Ajusta el ancho al contenedor */
+        height: 40vw;
+        display: block;
+        overflow: auto;
+        padding-top: 0;
+    }
+   
+}
