@@ -48,12 +48,21 @@ background-color: white;
     height: 155px;
  }
 
- h1{
-   color: rgb(255, 102, 13) 
+ h1 {
+   color: rgb(255, 102, 13);
+   font-size: 30px;
+   text-align: center;
+
  }
 
  p{
-   
+   line-height: 1.5; 
+   text-align: center; 
+   margin: 20px auto; 
+   max-width: 200px; 
+ }
+ .strong{
+   text-align: center;
  }
 .conteiner{
 padding-top: 60px;
