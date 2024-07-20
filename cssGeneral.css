@@ -1,32 +1,115 @@
 * {
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
 }
 
-Body {
+body {
   font-family: "lato", sans-serif;
+  margin: 0;
 }
 
 #guarda{
+  position: relative;
   display: flex;
+  align-items: flex-start;
   font-family:"lato";
   color: white;
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 3%;
-  margin-bottom: 5px;
+  padding-bottom: 15px;
+  padding-left: 25px;
   margin-top: 5px;
   background-color: black;
-  width: 100vw;
+  width: 100%;
 }
 
+#pp{
+  font-family:"lato";
+  color: white;
+  font-size:large;
+  padding-left: 150px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+ 
+}
+
+#pp1{
+  position: absolute;
+  font-family:"lato";
+  color: white;
+  font-size:large;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float:left;
+  width: 200px;
+  right:620px;
+  left:535px;
+  top: 10px;
+  bottom: 5px;
+ 
+}
+
+
+#guarda2{
+  position: absolute;
+  float: left;
+  height: 40px;
+  width: 120px;
+  top: 3px;
+  bottom: 3px;
+}
+
+#guarda1{
+  position: absolute;
+  float: left;
+  height: 45px;
+  width: 40px;
+  left: 135px;
+  top: 1px;
+  bottom: 4px;
+}
+
+.newsletter{
+  position: absolute;
+  float: right;
+  width: 150px;
+  height: 25px;
+  right: 20px;
+  top: 10px;
+  align-items: center;
+  background-color: white;
+  border-color: #fd7023;
+  border-bottom-right-radius: 10px;
+  /*border-bottom-left-radius: 10px;*/
+ /* border-top-right-radius: 10px;*/
+  border-top-left-radius: 10px;
+  font-family:"lato";
+  font-size:large;  
+  margin-left: 0%;
+}
+
+.newsletter:hover{
+  background-color: #fd7023;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left:1px solid white ;
+  border-right: 1px solid white;
+  font-family:"lato";
+  color: white;
+  font-size:large;
+
+  }
 
 .linea {
-  width: 100vw;
+  width: 100%;
   border-bottom:solid 3px #fd7023 
 }
+
 
 nav .list {
 display: flex;
@@ -42,6 +125,7 @@ nav .list a {
 display: inline-block;
 text-transform:uppercase;
 text-align: center;
+width: 100%;
 padding-top: 10px;
 padding-bottom: 5px;
 font-size: 15px;
@@ -57,7 +141,7 @@ border-bottom: 1px solid black
 .line {
     overflow: hidden;
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-wrap: wrap;
     align-items:start;
     justify-content: space-evenly;
@@ -66,11 +150,14 @@ border-bottom: 1px solid black
 
    footer {
     margin-top: auto;
+    width: 100%;
 }
 .media { 
     display: flex;
     flex-direction: row;
-    background-color: #fd9753;
+    background-color: #fd7023;
+    width: 100%;
+    padding: 0%;
     flex-grow: 1;
     justify-content: center;
     gap: 15px;      
@@ -84,6 +171,7 @@ border-bottom: 1px solid black
   
   span {
     color: black;
+    width: 100%;
   }
       .mediaitem{
         width: 40px;
@@ -92,20 +180,164 @@ border-bottom: 1px solid black
     #volver {
       margin-top: 25px;
     }
- 
-       
-  @media screen and (max-width: 480px) {
-           
-    .list {
-    background-color: rgb(255, 122, 33);
-    flex-direction: column; 
+  
+    
+  /* Media query para pantallas de hasta 800px */
+@media screen and (max-width: 900px) {
+  .list {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
     text-align: center;
-      }
-   
-      a {
-        margin: 0;
-    }
-    #volver {
-      margin-top: 25px;
-    }
   }
+   
+  a {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  #volver {
+    margin-top: 25px;
+  }
+
+  #guarda {
+    position: relative;
+    font-family: "Lato";
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5px;
+    background-color: black;
+    width: 100%;
+    height: 45vw;
+    left: 0%;
+  }
+
+  #guarda2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 4px;
+    left: 6vw;
+  }
+
+  #guarda1 {
+    position: absolute;
+    top: 0.5px;
+    height: auto;
+    width: 20%;
+    left: 80vw;
+  }
+
+  #pp {
+    position: absolute;
+    font-family: "Lato";
+    font-size: 4vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 0%;
+    padding-top: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0;
+    top: 25%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    align-content: center;
+  }
+
+  #pp1 {
+    float: left;
+    width: 100%;
+    padding-left: 30%;
+    right: 0%;
+    left: 0%;
+    top: 63%;
+    bottom: 5px;
+    font-size: 4vw;
+  }
+
+  .newsletter {
+    left: 8%;
+    top: 83%;
+    width: 85%;;
+  
+  }
+}
+
+/* Media query para pantallas de hasta 480px */
+
+@media screen and (max-width: 480px) {
+  .list {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  a {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  #guarda {
+    position: relative;
+    font-family: "Lato";
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0; /* Añadido para consistencia */
+    margin-top: 5px;
+    background-color: black;
+    width: 100%;
+    left: 0%;
+    height: 50vw;
+  }
+
+  #guarda2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 4px;
+    left: 20px;
+  }
+
+  #guarda1 {
+    position: absolute;
+    top: 1px;
+    height: auto;
+    width: 20%;
+    left: 80vw;
+  }
+
+  #pp {
+    position: absolute;
+    font-family: "Lato";
+    color: white;
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 0%;
+    padding-left: 12%;
+    padding-right: 1%;
+    padding-top: 0;
+    margin-top: 0;
+    top: 45%;
+    left: 2%;
+    height: auto;
+    width: 100%;
+    height: auto;
+  }
+}
+
+  
