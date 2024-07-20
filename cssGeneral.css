@@ -28,11 +28,33 @@ body {
   font-family:"lato";
   color: white;
   font-size:large;
-  justify-content: center;
   padding-left: 150px;
-  padding-top: 0;
-  margin-top: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+ 
 }
+
+#pp1{
+  position: absolute;
+  font-family:"lato";
+  color: white;
+  font-size:large;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  float:left;
+  width: 200px;
+  right:620px;
+  left:535px;
+  top: 10px;
+  bottom: 5px;
+ 
+}
+
+
 #guarda2{
   position: absolute;
   float: left;
@@ -51,6 +73,37 @@ body {
   top: 1px;
   bottom: 4px;
 }
+
+.newsletter{
+  position: absolute;
+  float: right;
+  width: 150px;
+  height: 25px;
+  right: 20px;
+  top: 10px;
+  align-items: center;
+  background-color: white;
+  border-color: #fd7023;
+  border-bottom-right-radius: 10px;
+  /*border-bottom-left-radius: 10px;*/
+ /* border-top-right-radius: 10px;*/
+  border-top-left-radius: 10px;
+  font-family:"lato";
+  font-size:large;  
+  margin-left: 0%;
+}
+
+.newsletter:hover{
+  background-color: #fd7023;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  border-left:1px solid white ;
+  border-right: 1px solid white;
+  font-family:"lato";
+  color: white;
+  font-size:large;
+
+  }
 
 .linea {
   width: 100%;
@@ -127,91 +180,32 @@ border-bottom: 1px solid black
     #volver {
       margin-top: 25px;
     }
- 
-
-  @media screen and (max-width:480px) {
-   
-    .list {
-        flex-direction: column;
-        height:auto;
-        width: 100%;
-    }
-    a {
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
-    #guarda{
-      position: relative;
-      font-family:"lato";
-      color: white;
-      padding-top: 100px;
-      padding-bottom: 50px;
-      padding-left: 0;
-      margin-top: 5px;
-      background-color: black;
-      width:100%;
-      left: 0%;
-    }
-    #guarda2{
-      position: absolute;
-      width: 80%;
-      height: auto;
-      top: 4px;
-      left:20px ;
-    }
+  
     
-    #guarda1{
-      position: absolute;
-      top: 1px;
-      height: auto;
-      width: 20%;
-      left: 400px;
-    }
-    
-    #pp{
-      position: absolute;
-      font-family:"lato";
-      color: white;
-      font-size: small;
-      justify-content: center;
-      padding-bottom: 0%;
-      padding-left: 2%;
-      padding-right: 1%;
-      padding-top: 0;
-      margin-top: 0;
-      top:25%;
-      right: 1%;
-      left: 2%;
-      height: auto;
-      width: 100%;
-      
-      
-    }
-}
-
-@media screen and (max-width: 800px) {
-           
+  /* Media query para pantallas de hasta 800px */
+@media screen and (max-width: 900px) {
   .list {
-  flex-direction: column; 
-  height: auto;
-  width: 100%;
-  text-align: center;
-    }
-   
-  a {   
-      flex-direction: column; 
-      height: auto;
-      width: 100%;
-      text-align: center;
-      margin: 0;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    text-align: center;
   }
+   
+  a {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  
   #volver {
     margin-top: 25px;
   }
-  #guarda{
+
+  #guarda {
     position: relative;
-    font-family:"lato";
+    font-family: "Lato";
     color: white;
     padding-top: 100px;
     padding-bottom: 1px;
@@ -219,37 +213,131 @@ border-bottom: 1px solid black
     padding-right: 0;
     margin-top: 5px;
     background-color: black;
-    width:100%;
-    height: 35vw;
+    width: 100%;
+    height: 45vw;
     left: 0%;
+  }
+
+  #guarda2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 4px;
+    left: 6vw;
+  }
+
+  #guarda1 {
+    position: absolute;
+    top: 0.5px;
+    height: auto;
+    width: 20%;
+    left: 80vw;
+  }
+
+  #pp {
+    position: absolute;
+    font-family: "Lato";
+    font-size: 4vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12%;
+    padding-right: 0%;
+    padding-top: 10%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0;
+    top: 25%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    align-content: center;
+  }
+
+  #pp1 {
+    float: left;
+    width: 100%;
+    padding-left: 30%;
+    right: 0%;
+    left: 0%;
+    top: 63%;
+    bottom: 5px;
+    font-size: 4vw;
+  }
+
+  .newsletter {
+    left: 8%;
+    top: 83%;
+    width: 85%;;
+  
+  }
 }
 
-#guarda2{
-  position: absolute;
-  width: 80%;
-  height: auto;
-  top: 4px;
-  left:20px ;
-}
-#guarda1{
-  position: absolute;
-  top: 1px;
-  height: auto;
-  width: 20%;
-  left: 80%;
+/* Media query para pantallas de hasta 480px */
 
+@media screen and (max-width: 480px) {
+  .list {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  a {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  #guarda {
+    position: relative;
+    font-family: "Lato";
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0; /* Añadido para consistencia */
+    margin-top: 5px;
+    background-color: black;
+    width: 100%;
+    left: 0%;
+    height: 50vw;
+  }
+
+  #guarda2 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 4px;
+    left: 20px;
+  }
+
+  #guarda1 {
+    position: absolute;
+    top: 1px;
+    height: auto;
+    width: 20%;
+    left: 80vw;
+  }
+
+  #pp {
+    position: absolute;
+    font-family: "Lato";
+    color: white;
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 0%;
+    padding-left: 12%;
+    padding-right: 1%;
+    padding-top: 0;
+    margin-top: 0;
+    top: 45%;
+    left: 2%;
+    height: auto;
+    width: 100%;
+    height: auto;
+  }
 }
-#pp{
-  position:absolute;
-  font-family:"lato";
-  color: white;
-  font-size: 25px;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 10%;
-  margin-top: 0;
-  top:30%;
-}
-}
+
+  
