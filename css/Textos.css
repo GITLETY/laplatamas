@@ -47,8 +47,46 @@ background-color: white;
     width: 250px;
     height: 155px;
  }
+ main{
+   height: auto;
+ }
+ .TituloTextos {
+   font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.bajadaTextos{
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 0;
+} 
 
 
+
+h3{
+   color: rgb(255, 102, 13);
+   font-size: 30px;
+   text-align: center;
+ }
+
+ p{
+   line-height: 1.5; 
+   text-align: center; 
+   margin: 20px auto; 
+   max-width: 200px; 
+ }
+ .strong{
+   text-align: center;
+ }
 .conteiner{
 padding-top: 60px;
 display: flex;
@@ -85,12 +123,12 @@ gap: 20px;
    }
  #pez1{
    position:absolute;
-   height: 100px;
-   width: 100px;
-   top: 1px;
-   bottom: 10px;
-   left:10px;
-   right: 10px;
+   height: 100%;
+   width: 100%;
+   top: 1%;
+   bottom: 10%;
+   left:10%;
+   right: 10%;
    transform: rotate(15deg);
  }
   }
