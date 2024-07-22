@@ -89,9 +89,12 @@ function newsletter(){
 
             
             let saludo = `Bienvenido ${nombreDelSuscriptor} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
-            alert(saludo);
+            //alert(saludo);
 
-            console.log("Saludo mostrado:", saludo); 
+            let bienvenida = document.querySelector(".bienvenida"); 
+            bienvenida.innerHTML = saludo;
+
+            console.log("Saludo mostrado:", bienvenida); 
 
         }
             
