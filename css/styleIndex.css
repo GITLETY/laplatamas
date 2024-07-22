@@ -37,7 +37,7 @@ body {
     padding-bottom: 1%;
     padding-left: 5%;
     padding-right: 5%;
-
+    
 
 }
 
@@ -94,9 +94,8 @@ p {
 
 
 .pp{
-    font-family: "lato";
-    font-size:  bold; 
-    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
     color: white;
     margin: 0%;
     padding: 0%;
