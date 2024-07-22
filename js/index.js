@@ -71,7 +71,10 @@ function newsletter(){
             
                 nombreDelSuscriptor = db[i].nombre;
                 suscriptorEncontrado = true; 
-                alert("Usted ya está suscripto");
+                let yaSucripto= `${nombreDelSuscriptor} usted ya está sucripto.`;
+                let recordatorio= document.querySelector(".bienvenida");
+                recordatorio.innerHTML= yaSucripto;
+               // alert("Usted ya está suscripto");
             } 
         }
         if (suscriptorEncontrado !== true){
