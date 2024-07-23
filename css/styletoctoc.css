@@ -43,7 +43,7 @@ main {
  h3 { 
     color: rgb(95, 95, 95);
     margin: 25px;
-    width: 70%;
+    width: auto;
     border: solid 3px rgb(255, 216, 87); 
     padding: 20px;
 
@@ -51,7 +51,7 @@ main {
 
 .box {
     display: flex;
-    justify-items: center;
+    flex-wrap: nowrap;
     background-color: rgb(255, 255, 255);
     
 }
