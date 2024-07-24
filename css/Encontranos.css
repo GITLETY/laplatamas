@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  .list {
-    background-color: white;
+    .list {
+
+      main
   flex-direction: column;
   justify-content: center;
   }
