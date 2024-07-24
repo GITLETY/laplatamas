@@ -103,6 +103,13 @@ width: 100%;
 
  }
 
+ textarea {
+  resize: none;
+  text-align:justify ;
+  overflow: visible;
+  min-height: 50px;
+}
+
 @media screen and (min-width: 1080px) {
 
   .list {
