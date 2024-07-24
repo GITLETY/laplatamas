@@ -71,7 +71,10 @@ function newsletter(){
             
                 nombreDelSuscriptor = db[i].nombre;
                 suscriptorEncontrado = true; 
-                alert("Usted ya está suscripto");
+                let yaSucripto= `${nombreDelSuscriptor} usted ya está sucripto.`;
+                let recordatorio= document.querySelector(".bienvenida");
+                recordatorio.innerHTML= yaSucripto;
+               // alert("Usted ya está suscripto");
             } 
         }
         if (suscriptorEncontrado !== true){
@@ -89,9 +92,12 @@ function newsletter(){
 
             
             let saludo = `Bienvenido ${nombreDelSuscriptor} a nuestra comunidad. Pronto recibirás un mail con contenido exclusivo.`;
-            alert(saludo);
+            //alert(saludo);
 
-            console.log("Saludo mostrado:", saludo); 
+            let bienvenida = document.querySelector(".bienvenida"); 
+            bienvenida.innerHTML = saludo;
+
+            console.log("Saludo mostrado:", bienvenida); 
 
         }
             

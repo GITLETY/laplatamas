@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/FavIconBarrac.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="../images/FavIconBarrac.png" type="image/x-icon"> 
     <fontfamily><style> @import 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap';
     </style></fontfamily>
     <link rel="stylesheet" href="../cssGeneral.css"> <!-- Esta en todas  -->
@@ -16,7 +16,8 @@
       <section id="guarda"> 
         <img id="guarda2" src="../images/logo tipografico blanco.png" alt="barracudas">
         <img id="guarda1" src="../images/FavIconBarrac.png" alt="logo barracudas">
-        <p id="pp">Cuidado, rengas intentando respirar adultez. Quien no se ahoga, flota.</p>
+        <p id="pp">Cuidado, rengas intentando respirar adultez.</p>
+        <p id="pp1">Quien no se ahoga, flota.</p>
     </section> 
      <div class="linea"> 
               <nav>
@@ -33,27 +34,27 @@
           </header>
 
     <main>
-      <h1> Contactate con nosotras</h1>
-      <section class="introformularioEncontranos">
-               <p> Dejanos un mensaje o buscanos en redes</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed delectus impedit! Eos aperiam esse reprehenderit accusantium. Minus possimus, porro expedita amet, voluptatibus deleniti velit commodi ad nam recusandae provident.</p>
-</section>
+      <h1> ¡ENCONTRANOS!</h1>
+             <section class="introformularioEncontranos">
+               <p id="mensaje"> Dejanos un mensaje, buscanos en redes </p>
+               <p id="sugerencia"> Si crees que podes ayudarnos con algun consejo/sugerencia o viceversa, contactanos. El trabajo colaborativo es nuestra prioridad. </p>
+              </section>
 
   <div class="formularioEncontranos">
 
       <form onsubmit="return validarFormulario()"> 
-      <div>
+      <div class="espacio">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" >
       </div>
-      <div>
+      <div class="espacio">
         <label for="mail">Correo electrónico:</label>
         <input type="email" id="mail" name="user_email" >
       </div>
-      <div>
+      <div class="espacio">
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje"></textarea>
-      </div>
+      </div class="espacio">
       <div class="button">
         <button type="submit" value="Enviar">Envia tu mensaje</button>
       </div>
