@@ -40,28 +40,30 @@ main {
    padding-top: 0;
  } 
  
+ h3 { 
+    color: rgb(95, 95, 95);
+    margin: 25px;
+    width: auto;
+    border: solid 3px rgb(255, 216, 87); 
+    padding: 20px;
+
+ }
 
 .box {
     display: flex;
-    justify-content: center;
-    padding-left: 100px;
-    width: 90%;
-    height: 100vh;
+    flex-wrap: nowrap;
     background-color: rgb(255, 255, 255);
     
 }
 
 .item {
-    flex-direction: row; 
-    gap: 10px;
+   
     flex-grow: 1;
-    justify-content: center; 
-    width: 28%;
-    height: auto;
-    margin: 30px;
-    border: solid 1px rgb(223, 226, 226); 
-    padding: 30px 30px 30px 30px;
+    margin: 15px;
+    border: solid 3px rgb(255, 168, 97); 
+    padding: 25px 25px 25px 25px;
 }
+
 
 #subtit { text-decoration: none; 
     font-size: 24px;
