@@ -42,9 +42,12 @@ main {
  
  h3 { 
     color: rgb(95, 95, 95);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-style: oblique;
+    text-align: center;
     margin: 25px;
     width: auto;
-    border: solid 3px rgb(255, 216, 87); 
+    background-color: rgb(255, 241, 196);
     padding: 20px;
 
  }
@@ -78,10 +81,16 @@ text-align: left;
     width: 150px;
     margin: 25px;
    }
+
+   span {
+    font-size: small;
+   }
    @media screen and (max-width: 800px) { 
     .box {
         flex-direction: column;
-        height: auto;}
+        height: auto;
+        align-items: center;
+    }
         .item {
             justify-content: center; 
             width: 80%;
@@ -93,6 +102,7 @@ text-align: left;
 
         .box {
         flex-direction: column;
+        align-items: center;
         height: auto;
        }
        .item {
