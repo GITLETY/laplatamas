@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var enlaces = document.querySelectorAll('.enlace-alerta');
+    let enlaces = document.querySelectorAll('.enlace-alerta');
 
     enlaces.forEach(function(enlace) {
         enlace.addEventListener('click', function(event) {
