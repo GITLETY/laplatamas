@@ -1,17 +1,17 @@
 
-
 window.addEventListener('load', function() {
     let formulario = document.getElementById('registro');
     let inputNombre = document.querySelector('#nombre');
     let inputEmail = document.querySelector('#email');
     let inputMensaje = document.querySelector('#mensaje');
 
+    
     formulario.addEventListener('submit', function(event) {
-
+      console.log(123)
         let dbEncontranos = [];
         let jsonStringyy = localStorage.getItem('contactos');
         try {
-             dbEncontranos = JSON.parse(jsonStringyy) || [];
+            dbEncontranos = JSON.parse(jsonStringyy) || [];
             console.log(dbEncontranos);
         } catch (e) {
             console.error("Error parsing JSON:", e);
@@ -21,18 +21,21 @@ window.addEventListener('load', function() {
         let erroresEmail = [];
         let erroresMensaje = [];
 
+        let errorNombre = document.querySelector('#errorNombre');
+        let errorEmail = document.querySelector('#errorEmail');
+        let errorMensaje = document.querySelector('#errorMensaje');
+
         // Validación del nombre
         if (inputNombre.value === '') {
             erroresNombre.push('El nombre es obligatorio.');
         } else if (inputNombre.value.length < 3) {
             erroresNombre.push('El campo NOMBRE debe tener al menos 3 caracteres.');
         } else {
-            document.querySelector('#errorNombre').innerHTML = '';// Limpiar anterior
+            document.querySelector('#errorNombre').innerHTML = ''; // Limpiar anterior
         }
 
         if (erroresNombre.length > 0) {
-            event.preventDefault();
-            let errorNombre = document.querySelector('#errorNombre');
+            event.preventDefault(); 
             errorNombre.innerHTML = ''; // Limpiar errores anteriores
             for (let i = 0; i < erroresNombre.length; i++) {
                 errorNombre.innerHTML += `<li>${erroresNombre[i]}</li>`;
@@ -52,7 +55,6 @@ window.addEventListener('load', function() {
 
         if (erroresEmail.length > 0) {
             event.preventDefault();
-            let errorEmail = document.querySelector('#errorEmail');
             errorEmail.innerHTML = ''; 
             for (let i = 0; i < erroresEmail.length; i++) {
                 errorEmail.innerHTML += `<li>${erroresEmail[i]}</li>`;
@@ -70,17 +72,15 @@ window.addEventListener('load', function() {
 
         if (erroresMensaje.length > 0) {
             event.preventDefault();
-            let errorMensaje = document.querySelector('#errorMensaje');
             errorMensaje.innerHTML = ''; 
             for (let i = 0; i < erroresMensaje.length; i++) {
                 errorMensaje.innerHTML += `<li>${erroresMensaje[i]}</li>`;
             }
         }
 
-        // Si no hay errorres
+        // Si no hay errores
         if (erroresNombre.length === 0 && erroresEmail.length === 0 && erroresMensaje.length === 0) {
             event.preventDefault();
-
             console.log("Nombre:", inputNombre.value);
             console.log("Email:", inputEmail.value);
             console.log("Mensaje:", inputMensaje.value);
@@ -104,12 +104,11 @@ window.addEventListener('load', function() {
             // Limpiar campos del formulario
             formulario.reset();
 
-            /*// Esperar 30 segundos antes de recargar la página
             setTimeout(function() {
-                location.reload();
-            }, 30000); // 30000 milisegundos = 30 segundos*/
-        }   
+                respuesta.innerHTML = '';
+            }, 15000);
 
+        }
     });
 
     let botonEnviar = document.getElementById('boton-enviar');
@@ -134,4 +133,23 @@ window.addEventListener('load', function() {
         botonCancelar.style.backgroundColor = '';
         botonCancelar.style.color = '';
     });
+
+    botonCancelar.addEventListener('click', function() {
+
+
+        console.log('Botón cancelar clickeado');
+        formulario.reset(); // Limpiar campos del formulario
+        errorNombre.innerHTML = '';
+        errorEmail.innerHTML = '';
+        errorMensaje.innerHTML = '';
+        let respuesta = document.querySelector('.respuesta');
+        respuesta.innerHTML = 'Cancelaste el envío de mensaje.';
+        console.log('Formulario y mensajes de error limpiados');
+         
+
+        setTimeout(function() {
+            respuesta.innerHTML = '';
+        }, 3000); 
+    });
+
 });
