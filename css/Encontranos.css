@@ -128,14 +128,7 @@ background-color: rgb(255, 255, 255);    }
     form {
       width: 65%;
   }
-  .mediaitem{
-    width: 20px;
-    margin: 10px;
-}
-.volver {
-  width: 80px;
-  margin: 10px;
-}
+
 
   @media screen and (min-width: 480px) {
 

@@ -154,14 +154,7 @@ box-sizing: border-box;
           left: 50%;
           top: 30px;
       }
-      .mediaitem{
-        width: 20px;
-        margin: 10px;
-    }
-    .volver {
-      width: 80px;
-      margin: 10px;
-   }
+    
 
 @media screen and (max-width: 480px) {
 
@@ -198,6 +191,3 @@ box-sizing: border-box;
    }
 }
 
-@media screen and (max-width:320px ) {
-
-}
