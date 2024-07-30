@@ -81,7 +81,9 @@ text-align: left;
    @media screen and (max-width: 800px) { 
     .box {
         flex-direction: column;
-        height: auto;}
+        height: auto;
+    align-items: center;
+}
         .item {
             justify-content: center; 
             width: 80%;
@@ -94,6 +96,7 @@ text-align: left;
         .box {
         flex-direction: column;
         height: auto;
+        align-items: center;
        }
        .item {
         justify-content: center; 

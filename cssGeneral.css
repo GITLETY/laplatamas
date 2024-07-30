@@ -180,8 +180,8 @@ border-bottom: 1px solid black
     #volver {
       margin-top: 25px;
     }
-  
-    
+
+
   /* Media query para pantallas de hasta 800px */
 @media screen and (max-width: 900px) {
   .list {
@@ -281,7 +281,34 @@ border-bottom: 1px solid black
     height: auto;
     width: 100%;
   }
+/* nuevo */
+.noMostrarMenu{
+  display: none;
+}
 
+.mostrarMenu{
+  display: block;
+  transition: 1s linear;  
+}
+
+.menu{
+  position: absolute;
+  margin-top: 85px;
+  cursor: pointer;
+  height: 3rem;
+  background:black;
+  align-items: flex-end;
+  padding-bottom: 50px;
+ 
+}
+#guarda3 {
+  position: absolute;
+  /* padding: 10rem; */
+  width:3rem;
+  /* margin-top: 5rem; */
+  left: 47vw;
+}
+/* finnuevo */
   a {
     justify-content: center;
     width: 100%;
@@ -340,4 +367,14 @@ border-bottom: 1px solid black
   }
 }
 
-  
+@media screen and (min-width: 1080px) {
+.menu{
+display:none;
+}
+
+nav{
+  display: block;
+  transition: 1s linear; 
+}
+
+}
