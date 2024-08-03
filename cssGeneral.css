@@ -152,6 +152,15 @@ border-bottom: 1px solid black
     margin-top: auto;
     width: 100%;
 }
+a {
+  width: 150px;
+  justify-content: center;
+  }
+
+span {
+  color: black;
+  width: 100%;
+}
 .media { 
     display: flex;
     flex-direction: row;
@@ -160,28 +169,22 @@ border-bottom: 1px solid black
     padding: 0%;
     flex-grow: 1;
     justify-content: center;
+    align-items: center;
     gap: 15px;      
     margin-top: 50px;
     }
-
-    a {
-    width: 150px;
-    justify-content: center;
-    }
   
-  span {
-    color: black;
-    width: 100%;
-  }
-      .mediaitem{
+    .mediaitem{
         width: 40px;
         margin: 25px;
     }
-    #volver {
-      margin-top: 25px;
-    }
 
-
+    .volver {
+      width: 150px;
+      margin: 25px;
+     }
+  
+    
   /* Media query para pantallas de hasta 800px */
 /* @media screen and (max-width: 900px) {
   .list {
@@ -199,7 +202,7 @@ border-bottom: 1px solid black
     margin: 0;
   }
   
-  #volver {
+  .volver {
     margin-top: 25px;
   }
 
