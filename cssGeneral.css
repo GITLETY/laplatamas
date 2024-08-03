@@ -183,7 +183,7 @@ border-bottom: 1px solid black
 
 
   /* Media query para pantallas de hasta 800px */
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .list {
     flex-direction: column;
     height: auto;
@@ -271,11 +271,13 @@ border-bottom: 1px solid black
     width: 85%;;
   
   }
-}
+} */
 
 /* Media query para pantallas de hasta 480px */
 
-@media screen and (max-width: 480px) {
+
+/*------------------ MUESTRA MENU REDUCIDO HASTA 1080------------------------*/
+@media screen and (max-width: 1080px) {
   .list {
     flex-direction: column;
     height: auto;
@@ -292,20 +294,20 @@ border-bottom: 1px solid black
 }
 
 .menu{
-  position: absolute;
-  margin-top: 85px;
+  position: relative;
+  /* margin-top: 85px; */
   cursor: pointer;
-  height: 3rem;
+  height: 2rem;
   background:black;
   align-items: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 2rem;
+  top:75%;
  
 }
 #guarda3 {
   position: absolute;
-  /* padding: 10rem; */
-  width:3rem;
-  /* margin-top: 5rem; */
+  align-items: center;
+  width:2rem;
   left: 47vw;
 }
 /* finnuevo */
@@ -365,16 +367,35 @@ border-bottom: 1px solid black
     width: 100%;
     height: auto;
   }
-}
 
+  #pp1 {
+    float: left;
+    width: 100%;
+    padding-left: 30%;
+    right: 0%;
+    left: 0%;
+    /* top: 63%; */
+    top: 55%; 
+    bottom: 5px;
+    font-size: 4vw;
+  }
+  .newsletter {
+    left: 8%;
+    top: 72%;
+    /*  */
+    width: 85%;;
+  
+  }
+
+}
+/*------------------NO MUESTRA MENU------------------------*/
 @media screen and (min-width: 1080px) {
 .menu{
 display:none;
 }
-
+/* 
 nav{
   display: block;
   transition: 1s linear; 
-}
-
+} */
 }
