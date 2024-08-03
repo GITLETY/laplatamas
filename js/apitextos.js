@@ -5,7 +5,7 @@ fetch('https://api.mercadolibre.com/sites/MLA/search?q="libro de poesia"=5&offse
 .then((data) => {
     // console.log(data)
 const articles = data.results
-for(let i=0; i<5; i++) {
+for(let i=0; i<4; i++) {
 
 publicidad.insertAdjacentHTML(
     "beforeend",
