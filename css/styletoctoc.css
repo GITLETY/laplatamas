@@ -14,6 +14,7 @@ body {
 
 .imagen1 {
    padding-top: 20px;
+   background-color:antiquewhite;
 }
 
 main {
@@ -51,20 +52,25 @@ main {
     padding: 20px;
 
  }
-
+.bloque{
+   
+    background-image: url(../images/OIG3.hzA.jpg);
+    padding-top: 20px;
+    margin-top: 10px;
+}
 .box {
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgb(255, 255, 255);
-    
+        
 }
 
 .item {
    
     flex-grow: 1;
-    margin: 15px;
+    margin: 25px;
     border: solid 3px rgb(255, 168, 97); 
     padding: 25px 25px 25px 25px;
+    background-color: white;
 }
 
 

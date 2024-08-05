@@ -82,20 +82,19 @@ width: 100%;
   }
 
   .formularioEncontranos{
+  
     display: flex;
     flex-direction: row;
       font-size: medium;
-      padding: 3rem;
+      padding: 1rem;
     justify-content: center;
-    /* background-color:rgb(218, 184, 34); */
-    
-/* background-image: url('../images/textura@300x.png'); */
+
   }
 
   form {
     width: 75%;
     padding: 2rem;
-    background-color: rgba(241, 137, 68, 0.356);
+    background-color: rgba(255, 185, 105, 0.356);
   border: 1px solid #afafaf;
   border-radius: 1rem;
   background-image: url('../images/textura@300x.png');
